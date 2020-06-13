@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="&#12467;&#12531;&#12509;&#12540;&#12493;&#12531;&#12488;&#12497;&#12521;&#12513;&#12540;&#12479;&#12540;" i18n.job.properties="&#12503;&#12525;&#12497;&#12486;&#12451;" i18n.job.values="&#20516;" i18n.mapper.table.for="&#12510;&#12483;&#12497;&#12540;&#12486;&#12540;&#12502;&#12523; " i18n.mapper.table.properties="&#12510;&#12483;&#12497;&#12540;&#12486;&#12540;&#12502;&#12523;&#23646;&#24615;" i18n.job.name="Name" i18n.tmap.matching.mode="&#12510;&#12483;&#12481;&#12531;&#12464;&#12514;&#12540;&#12489;" i18n.mapper.table.isminimized="&#26368;&#23567;&#21270;" i18n.tmap.isreject="&#12522;&#12472;&#12455;&#12463;&#12488;" i18n.tmap.isrejectinnnerjoin="&#20869;&#37096;&#32080;&#21512;&#12398;&#12522;&#12472;&#12455;&#12463;&#12488;" i18n.tmap.isinnerjoin="&#20869;&#37096;&#32080;&#21512;" i18n.tmap.expressionfilter="&#24335;&#12501;&#12451;&#12523;&#12479;&#12540;" i18n.mapper.table.metadata.entries="&#12513;&#12479;&#12487;&#12540;&#12479;&#12486;&#12540;&#12502;&#12523;&#12456;&#12531;&#12488;&#12522;" i18n.job.type="Type" i18n.mapper.table.expression="&#24335;" i18n.tmap.isnullable="NULL&#21487;&#33021;" i18n.tmap.constraint.entries="&#21046;&#32004;&#12486;&#12540;&#12502;&#12523;&#12456;&#12531;&#12488;&#12522;&#12540;" name="tMap_3" preview="pictures/_QV_qYNKiEeiDccUERV3YTg-tMap_3-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher&#32113;&#35336;">false</column>
+    <column name="&#20006;&#21015;&#20966;&#29702;&#12398;&#26377;&#21177;&#21270;">false</column>
+    <column name="&#12510;&#12483;&#12500;&#12531;&#12464;&#12522;&#12531;&#12463;&#12398;&#34920;&#31034; :">AUTO</column>
+    <column name="&#19968;&#26178;&#12487;&#12540;&#12479;&#12434;&#12487;&#12451;&#12473;&#12463;&#12395;&#20445;&#23384;"></column>
+    <column name="&#26368;&#22823;&#12496;&#12483;&#12501;&#12449;&#12469;&#12452;&#12474;&#65288;&#34892;&#25968;&#65289;:">2000000</column>
+    <column name="Ignore trailing zeros for BigDecimal">false</column>
+    <column name="&#24773;&#22577;&#12398;&#34920;&#31034;">false</column>
+    <column name="&#12467;&#12513;&#12531;&#12488;"><![CDATA[]]></column>
+    <column name="&#26082;&#23384;&#12398;&#26908;&#35388;&#12523;&#12540;&#12523;&#12434;&#20351;&#29992;">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row1" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="ID" type="String" expression="" isNullable="true"/>
+        <entry name="TEXT" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="out2" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="ID" type="String" expression="row1.ID " isNullable="true"/>
+        <entry name="TEXT" type="String" expression="row1.TEXT " isNullable="true"/>
+        <entry name="FILENAME" type="String" expression="((String)globalMap.get(&quot;fileName&quot;)) " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false"/>
+  </mapperTable>
+</externalNode>
